@@ -1,0 +1,5 @@
+AuthName "Add your login message here."
+AuthType Basic
+AuthUserFile path/to/file/.htpasswd
+require user name-fo-the-user
+ErrorDocument 401 default
