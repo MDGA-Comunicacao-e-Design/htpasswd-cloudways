@@ -10,7 +10,7 @@ It's something like:
 ### Using Oxygen Builder
 - Create a page
 - Add a code block
-- add <?php echo ABSPATH; ?>
+- add echo ABSPATH;
 - check the page in front-end
 
 ## 2.Create a password
