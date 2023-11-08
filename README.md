@@ -25,16 +25,15 @@ I use this website: https://hostingcanada.org/htpasswd-generator/ to generate th
 ## Add the protection data in .htaccess
 - Download the .htaccess
 - Add the code below
-<code>
-AuthName "Add your login message here."
+<code>AuthName "Add your login message here."
 AuthType Basic
 AuthUserFile path/to/file/.htpasswd
 require user name-fo-the-user
-ErrorDocument 401 default
-</code>
+ErrorDocument 401 default</code>
 
 Replace <code>name-fo-the-user</code> with the user you use in the previous step
-Replace <code>path/to/file/</code> with the path you ger in the step 2
+Replace <code>path/to/file/</code> with the path you get in the step 2. The code in this part will be like:
+<code>AuthUserFile /home/XXXXXX.cloudwaysapps.com/aplicationfolder/public_html/.htpasswd</code>
 
 ## Add to the application root and it's done
 Upload both files (.htaccess e .htpasswd)to public_html folder and website it's protected.
